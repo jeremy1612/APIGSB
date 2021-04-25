@@ -1,0 +1,12 @@
+RewriteEngine On # Activer le module Rewrite
+
+RewriteRule ^secteurs/?$ DAOSecteur.php [NC,L]
+RewriteRule ^[^/]+/(\d+)$ DAOSecteur.php?id=$1
+
+RewriteEngine On # Activer le module Rewrite
+RewriteRule ^regions/?$ DAORegion.php [NC,L]
+RewriteRule ^[^/]+/(\d+)$ DAORegion.php?id=$1
+
+RewriteEngine On # Activer le module Rewrite
+RewriteRule ^visiteurs/?$ DAOVisiteur.php [NC,L]
+RewriteRule ^[^/]+/(\d+)$ DAOVisiteur.php?id=$1
